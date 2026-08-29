@@ -1,6 +1,6 @@
 # loop-engineering-setup
 
-ループエンジニアリング(Loop Engineering)の実戦の「お膳立て」を一気通貫で行う Claude スキル。
+ループエンジニアリング(Loop Engineering)の実践のためのセットアップを一気通貫で行う Claude スキル。
 
 ループエンジニアリングは Addy Osmani が2026年6月に提唱した手法で、原文の定義は
 "Loop engineering is replacing yourself as the person who prompts the agent."
