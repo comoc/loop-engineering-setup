@@ -1,7 +1,7 @@
 ---
 name: loop-engineering-setup
 description: >
-  ループエンジニアリング(Loop Engineering / Addy Osmani 2026)の実戦のお膳立てを一気通貫で行うスキル。
+  ループエンジニアリング(Loop Engineering / Addy Osmani 2026)の実践のためのセットアップを一気通貫で行うスキル。
   対象リポジトリを診断し、ループ設計書(検証可能なゴール・検証ゲート・Maker/Checker分離・停止条件・
   人間確認ポイント)を提示し、承認後に .claude/agents/ のサブエージェント定義、/loop コマンド、
   状態ファイル、判定基準、CLAUDE.md 追記など実行に必要な一式を生成して試運転まで行う。
@@ -10,7 +10,7 @@ description: >
   明示しなくても必ずこのスキルを使うこと。既にループ関連ファイルがあるリポジトリの診断・改善にも使う。
 ---
 
-# Loop Engineering Setup — ループ実戦のお膳立て
+# Loop Engineering Setup — ループ実践のためのセットアップ
 
 ## 背景と目的
 
@@ -22,7 +22,7 @@ the person who prompts the agent."
 Automations(自動起動) / Worktrees(並列隔離) / Skills(知識の外部化) / Connectors(外部連携) /
 Sub-agents(Maker-Checker分業) / Memory(ディスク上の状態)。
 
-このスキルは対象リポジトリでそのお膳立てを行う: **診断 → 設計(承認) → 生成 → 試運転 → 運用ガイド**。
+このスキルは対象リポジトリでそのセットアップを一気通貫で行う: **診断 → 設計(承認) → 生成 → 試運転 → 運用ガイド**。
 
 生成する全ファイルに反映すべき大原則:
 
@@ -41,7 +41,7 @@ Sub-agents(Maker-Checker分業) / Memory(ディスク上の状態)。
 リポジトリを調べ、ループを回せる状態かを見立てる:
 
 - **検証ゲートの実在(最重要)**: テストコマンドを特定し実際に走らせて現状を確認。lint / format /
-  型チェック / ビルドの有無も確認。動くゲートが1つもなければ、**ゲート整備こそ最初のお膳立て**である
+  型チェック / ビルドの有無も確認。動くゲートが1つもなければ、**ゲート整備こそ最初のセットアップ**である
   — 検証なしのループは高速に間違いを量産する装置でしかない。
 - **仕様・判断材料**: docs/ や README に、Checker が実装と突き合わせられる「何が正しいか」の記述があるか。
 - **既存の Claude Code 資産**: CLAUDE.md、.claude/agents|commands|skills、hooks 設定。
